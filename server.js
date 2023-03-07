@@ -13,9 +13,11 @@ app.use("/api/user" , require("./Routes/user"))
 app.use("/api/branch" , require("./Routes/branch"))
 app.use("/api/item" , require("./Routes/item"))
 
-const PORT = process.env.PORT
+
+const PORT = process.env.PORT || 5421
 
 app.listen(PORT , error => {
     error ? console.error(`failed to connect ${error}`) :
     console.log(`server is running on port : ${PORT}`)
 })
+
