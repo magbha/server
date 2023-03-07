@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "inventory management app",
+  "main": "server.js",
+  "scripts": {
+    "front": "cd .. && cd client && npm start",
+    "back": "nodemon server --ignore client",
+    "dev": "concurrently \"npm run back\" \"npm run front\" "
+  },
+  "keywords": [
+    "inventory",
+    "management",
+    "gomycode"
+  ],
+  "author": "Mohamed Abdelghani",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "concurrently": "^7.6.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
