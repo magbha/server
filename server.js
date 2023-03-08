@@ -10,7 +10,7 @@ app.use(express.json());
 const ConnectDB = require("./Config/ConnectDB");
 ConnectDB();
 
-app.options('*', cors());
+app.options('*', cors({ origin: ["https://st-room-inventory.onrender.com/" , "https://st-room-inventory.onrender.com"] }));
 //app.use(cors({ origin: ["https://st-room-inventory.onrender.com"] }));
 app.use("/api/user", require("./Routes/user"));
 app.use("/api/branch", require("./Routes/branch"));
