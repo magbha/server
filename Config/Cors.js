@@ -9,7 +9,7 @@ const allowedOrigins = [
 ]
 
 const corsOptions = {
-  origin: "*",
+  origin: ["https://st-room-inventory.onrender.com"],
   optionsSuccessStatus: 200,
   credentials: true,
 
