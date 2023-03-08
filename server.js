@@ -6,11 +6,13 @@ require("dotenv").config();
 
 app.use(express.json())
 
-const ConnectDB = require("./Config/ConnectDB")
+const ConnectDB = require("./Config/ConnectDB");
+const corsOptions = require("./Config/Cors");
 ConnectDB();
 
 
-app.use(cors())
+
+app.use(cors(corsOptions))
 app.use("/api/user" , require("./Routes/user"))
 app.use("/api/branch" , require("./Routes/branch"))
 app.use("/api/item" , require("./Routes/item"))
