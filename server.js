@@ -4,11 +4,11 @@ const cors = require("cors")
 
 require("dotenv").config();
 
+const corsOptions = require("./Config/Cors");
 app.use(cors(corsOptions))
 app.use(express.json())
 
 const ConnectDB = require("./Config/ConnectDB");
-const corsOptions = require("./Config/Cors");
 ConnectDB();
 
 
