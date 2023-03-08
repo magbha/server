@@ -8,6 +8,7 @@ const corsOptions = {
     optionsSuccessStatus: 200,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     allowedHeaders: ['Content-Type', 'Authorization']
+    
 }
 
 module.exports = corsOptions
