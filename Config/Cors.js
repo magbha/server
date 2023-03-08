@@ -12,7 +12,6 @@ const corsOptions = {
   origin: ["https://st-room-inventory.onrender.com"],
   optionsSuccessStatus: 200,
   credentials: true,
-  allowedHeaders : ['Content-Type', 'Authorization']
 };
 
 module.exports = corsOptions;
