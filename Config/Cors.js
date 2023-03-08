@@ -10,9 +10,9 @@ const allowedOrigins = [
 
 const corsOptions = {
   origin: ["https://st-room-inventory.onrender.com"],
-  credentials: true,
   optionsSuccessStatus: 200,
-  
+  credentials: true,
+
 };
 
 module.exports = corsOptions;
